@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0.5rem;
+}
+section#service > .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 500;
+  width: 700px;
+  margin: 0 auto;
+}
+
+section#service > .heading > p {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section#service > .container > .box {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  box-sizing: border-box;
+  padding-top: 0rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.container > .box > div {
+  background-color: #fff;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  align-items: flex-start;
+  height: auto;
+}
+.container > div > .icon {
+  /* padding-top: 3rem; */
+}
+.container > div > .icon > svg {
+  border-radius: 1rem;
+}
+.container > div > .content {
+  font-size: larger;
+  /* margin: 2rem; */
+}
+section#service > div.container > .background {
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  top: 0;
+  background-color: #a0bece;
+  border-radius: 2rem;
+  z-index: -1;
+}

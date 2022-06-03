@@ -1,0 +1,480 @@
+:root {
+  --nautral800: #14142b;
+  --nautral700: #4e4b66;
+  --nautral600: #777990;
+  --nautral500: #b2b4c4;
+  --nautral400: #d9dbe9;
+  --nautral300: #eff0f6;
+  --nautral200: #f6f7ff;
+  --nautral00: #ffffff;
+  --secondary1: #ebe8ff;
+  --secondary2: #fff5d2;
+  --secondary3: #f3fbff;
+  --secondary4: #f3eeff;
+}
+body {
+  font-family: robo;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--nautral800);
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-family: "RobotoRG";
+  font-weight: 700;
+}
+a:hover,
+a :focus {
+  opacity: 0.6;
+}
+btn {
+}
+
+/* header section */
+header {
+  background-color: #a0bece;
+}
+.container {
+  max-width: 1258px;
+  margin: 0 auto;
+  width: 100%;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+header > div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header > div.container > nav {
+  display: flex;
+  gap: 1rem;
+}
+header > div.container > a.emailaddress {
+  display: flex;
+}
+/* main section */
+section#home {
+  padding-top: 7rem;
+}
+main .container .h1 {
+  font-size: large;
+  font-size: 35px;
+  font-family: "robotoBLD";
+}
+main .container .h2 {
+  font-size: 70px;
+  margin: 0rem;
+}
+main .container {
+  height: 100vh;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6rem;
+}
+main #home .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: center;
+}
+main .bannerimage {
+  height: 700.05px;
+  width: 600;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  background-color: rgb(227, 218, 238);
+  border-radius: 70%;
+  margin-top: 1rem;
+}
+main .bannerimage > img {
+  height: 100%;
+  width: 100%;
+}
+.btn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  height: 2cm;
+  width: 5cm;
+  margin: 2rem 0rem;
+}
+button:hover {
+  background-color: #eff0f6;
+  color: #4e4b66;
+  box-shadow: none;
+}
+/* <!-- My services section page --> */
+* {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0.5rem;
+}
+section#service {
+  padding-top: 4rem;
+}
+section#service > .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 500;
+  width: 700px;
+  margin: 0 auto;
+}
+
+section#service > .heading > p {
+  text-align: center;
+}
+
+section#service > .container {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section#service > .container > .box {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  box-sizing: border-box;
+  padding-top: 0rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.container > .box > div {
+  background-color: #fff;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  align-items: flex-start;
+  height: auto;
+}
+section#service .container > div > .icon > svg {
+  border-radius: 2rem;
+}
+.container > div > .content {
+  font-size: larger;
+  /* margin: 2rem; */
+}
+section#service > div.container > .background {
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  top: 0;
+  background-color: #a0bece;
+  border-radius: 2rem;
+  z-index: -1;
+}
+section#service .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  height: 2cm;
+  width: 5cm;
+  margin: 0 auto;
+}
+section#service button:hover {
+  background-color: #eff0f6;
+  color: #4e4b66;
+  box-shadow: none;
+}
+/* <!-- About section start here --> */
+section#about > .aboutsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 500;
+  width: 700px;
+  margin: 0 auto;
+}
+section#about > .aboutsection > p {
+  text-align: center;
+}
+section#about .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  height: 2cm;
+  width: 5cm;
+  margin: 0 auto;
+}
+section#about button:hover {
+  background-color: #eff0f6;
+  color: #4e4b66;
+  box-shadow: none;
+}
+section#about > div.homepic > img {
+  border-radius: 50px;
+}
+/* <!-- resume section start here --> */
+section#resume {
+  display: flex;
+  flex-direction: column;
+}
+section#resume > .al {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  width: 100%;
+}
+section#resume .container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  height: 100vh;
+  padding: 2rem;
+  gap: 20px;
+  background-color: #e4e4e4;
+}
+section#resume .container .box1 {
+  display: flex;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section#resume .container > div a {
+  display: flex;
+  align-items: center;
+}
+section#resume .container > div.box1 > div.jan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#resume > div.container > div.background {
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  top: 0;
+  background-color: #f1d7e3;
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+/* <!-- @portfolio section start h--> */
+
+section#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+section#portfolio > h2 {
+  font-size: xx-large;
+}
+section#portfolio > div.imageport {
+  display: grid;
+  flex-direction: row;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(0, auto);
+  height: 100vh;
+  gap: 3rem;
+}
+section#portfolio > div.imageport > img {
+  height: 409px;
+  width: 575px;
+}
+/* blog section start here */
+section#blog > div.blogheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+section#blog > div.blogheader h2 {
+  font-size: 35px;
+  line-height: 1.38em;
+  font-weight: 700;
+}
+
+section#blog > .blogimages > .lanmark {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(1, auto);
+  background-color: #e4e4e4;
+}
+
+/* !-- testimonial secton start here --> */
+section#testimonial {
+  margin-top: 70rem;
+  flex-direction: column;
+}
+section#testimonial > div.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+section#testimonial > div.blogersection {
+  /* height: 100vh; */
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0;
+}
+section#testimonial > div.heading > h2 {
+  font-size: 42px;
+  line-height: 1.38em;
+  font-weight: 700;
+}
+section#testimonial > div.heading > p {
+  font-size: 18px;
+  line-height: 1.777em;
+  font-weight: 500;
+  width: 40%;
+  text-align: center;
+}
+section#testimonial > div.blogersection {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+section#testimonial > div.blogersection > div.bloger > blockquote {
+  font-size: 24px;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+section#blog {
+  flex-direction: column;
+}
+
+/* instagram secton */
+
+section#instagramlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+section#instagramlog > div.fol {
+  justify-self: center;
+}
+section#instagramlog > div.instapic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #e4e4e4;
+}
+section#instagramlog > div.instapic > img {
+  transform: rotate(45);
+  scale: 1.3;
+  translate: 100px 100px;
+  transform: perspective(100px) rotate(-50px);
+  transform-origin: (0, 0);
+}
+section#instagramlog > div.instapic > img:nth-child(2) {
+  grid-row: 2 span;
+  transform: perspective(100px) (50px);
+  rotate: 45deg;
+  scale: 1.3;
+}
+/* section lastline start here */
+section#lastline {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+section#lastline div.florem1 > p {
+  display: flex;
+  width: 15rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+section#lastline > div.alcount {
+  display: flex;
+  flex-direction: row;
+}
+section#lastline > div.svg {
+  display: flex;
+  flex-direction: column;
+}
+section#lastline div.ancor div.collume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+section#lastline div.ancor nav {
+  margin: 0;
+}
+
+section#lastline div.ancor div.collume a {
+  width: 40%;
+  margin: 0.5rem 0;
+}
+section#lastline div.utpages {
+  margin: 0;
+}
+section#lastline div.utpages nav {
+  margin: 0;
+}
+section#lastline div.utpages div.ultra {
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  flex-wrap: wrap;
+}
+section#lastline div.add-number div.mail a {
+  display: flex;
+}
+section#lastline div.add-number div.number {
+  display: flex;
+}
+/* Footer section start here */
+div.dive {
+  background-color: #a0bece;
+  height: 1px;
+}
+div.footerr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
